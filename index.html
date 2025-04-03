@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercado Livre - Compre e venda tudo em um só lugar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <style>
+    /* Classe para ocultar elementos */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="nav-bar">
+      <!-- Logo -->
+      <img src="./img/logo.png" alt="Mercado Livre" class="logo" />
+
+      <!-- Busca -->
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar produtos ou categorias" />
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- Menu de navegação -->
+      <nav class="nav-menu">
+        <ul>
+          <!-- Dropdown de categorias -->
+          <li class="dropdown" id="category-trigger">
+            <a href="#">Categorias <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu hidden" id="dropdown-list">
+              <!-- Itens serão inseridos via JavaScript -->
+            </ul>
+          </li>
+          <li><a href="#">Video Games</a></li>
+          <li><a href="#">Cupons</a></li>
+          <li><a href="#">Moda</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Vender</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="products">
+      <h2>Ofertas do dia</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="./img/samsung.jpeg" alt="Smartphone Samsung Galaxy S23" />
+          <div class="product-info">
+            <h3>Smartphone Samsung Galaxy S23</h3>
+            <div class="price">R$ 3.499,00</div>
+            <div class="installment">12x R$ 291,58 sem juros</div>
+            <div class="shipping">Frete grátis</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/notebook.jpeg" alt="Notebook Dell Inspiron 15" />
+          <div class="product-info">
+            <h3>Notebook Dell Inspiron 15</h3>
+            <div class="price">R$ 4.199,00</div>
+            <div class="installment">12x R$ 349,92 sem juros</div>
+            <div class="shipping">Frete grátis</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/jbl.jpeg" alt="Fone JBL Bluetooth" />
+          <div class="product-info">
+            <h3>Fone JBL Bluetooth</h3>
+            <div class="price">R$ 199,00</div>
+            <div class="installment">3x R$ 66,33 sem juros</div>
+            <div class="shipping">Frete grátis</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/tv.jpeg" alt="Samsung Smart TV 50&quot; 4K" />
+          <div class="product-info">
+            <h3>Samsung Smart TV 50&quot; 4K</h3>
+            <div class="price">R$ 2.599,00</div>
+            <div class="installment">10x R$ 259,90 sem juros</div>
+            <div class="shipping">Frete grátis</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 1999-2023 MercadoLivre.com</p>
+    </div>
+  </footer>
+
+  <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>
