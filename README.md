@@ -11,7 +11,10 @@ Este é um projeto simples de site em HTML, CSS e JavaScript que exibe uma vitri
 ## 🚀 Como Visualizar
 
 1. Faça o download ou clone este repositório.
-2. Abra o arquivo `index.html` no navegador de sua preferência.
+2. ```sh
+   git clone https://github.com/Caiojosue/Api_mercado_livre
+   ```
+3. Abra o arquivo `index.html` no navegador de sua preferência.
 
 ## 📸 Exemplos de Produtos
 
